@@ -1,0 +1,159 @@
+@charset "utf-8";
+@font-face {
+    font-family:font1 ;
+    src: url(./fonts/LongaIberica-DEMO.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(./fonts/carolingia.ttf);
+}
+
+*{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+
+}
+
+body{
+    margin: 0; /* zerar a margem de todo o doc */
+    padding: 0; /* zerar o espaçamento de todo o doc */
+    height: 100vh;
+    width: 98vw;
+    background-color: hsl(111, 17%, 15%); /* escollher cor do plano de fundo */
+    
+    
+    
+}
+
+h1{
+    font-family: font2;
+    font-size: 3em;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(65, 109, 67);
+    border-radius: 3%;
+    color: rgb(44, 44, 44);
+    top: -2%;
+    
+}
+
+.container{
+
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    /* torna possivel alterar a posicao do c o n t a i n e r */
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    /* altera a posicao do eixo */
+    
+    
+}
+
+.navegacao {
+    position: absolute; /* posicao em relacao ao container */
+    bottom: 20px; /* distancia a partir da base */
+    left: 50%; /* distancia a aprtir da esquerda */
+    transform: translate(-50%); /* alterar o eixo principal */
+    display: flex; /* colocar o conteudo lado a lado */
+   
+}
+.bar {
+    background-color: #eeff0096; /* plano de fundo do indicador */
+    width: 30px; /* largura do indicador */
+    height: 5px; /* altura do indicador */
+    margin: 6px;/* espaco entre os indicadores */
+    transition: .3s;  /* trasicao no hover */
+    cursor: pointer; /* ponteiro do mouse */
+   
+   
+}
+input {
+    display: none; /* ocultar as input do tipo radio */
+
+}
+
+.imagens {
+    display: flex; /* posiciona uma imagem ao lado da outra */
+    width: 600%; /* define o tamanho da div imagens */
+    height: 100%; /* define a altura da div imagens */
+    
+}
+
+.imagem {
+    width: 16.6666666667%; /* define a proporçao do tamanho de cada imagem em relaçao ao elemento pai */
+    transition: .5s; /* efeito na transiçao das imagens */
+
+}
+
+.imagem img{
+    width: 100%;/* ajusta o tamanho da imagem dentro do container  */
+    height: 100%;/* ajusta o tamanho da iamgem dentro do container */
+    border-radius: 3%;
+}
+
+#imagem1:checked~.img1{
+    margin-left: 0;
+    
+}
+
+#imagem2:checked~.img1{
+
+    margin-left:-16.6666666667%;
+}
+
+
+#imagem3:checked~.img1{
+    margin-left:  -33.33333333333%;
+}
+
+#imagem4:checked~.img1{
+    margin-left: -50%;
+}
+
+#imagem5:checked~.img1{
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked~.img1{
+    margin-left: -83.3333333333%;
+}
+
+footer {
+    position: absolute; bottom: -23%; 
+    left: 37%;
+    font-size: 130%;
+    background-color: rgb(65, 109, 67);;
+    border-radius: 4%;
+    color: rgb(44, 44, 44);
+  
+}
+
+p {
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color:rgb(65, 109, 67);; 
+    border-radius: 5%;
+    position: absolute;
+    top: 11%;
+    
+
+}
+
+
+
+
+
+
+
+
+
